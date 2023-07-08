@@ -1,0 +1,25 @@
+.side_anchor{
+    
+    -fx-background-color: #3261e2; 
+}
+.main_anchor{
+    -fx-background-color: linear-gradient(to right,#1e38cf , #3261e2 );
+}
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand; 
+}
+.close:hover{
+    -fx-background-color: #be1d1dfc;
+}
+.choose_btn{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+}
+.choose_btn:hover{
+    -fx-background-color: #03f9e0;
+    -fx-text-fill:black;
+}
+.choose_btn:checked{
+    -fx-background-color: #0b0985;
+}

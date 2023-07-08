@@ -1,0 +1,7 @@
+.close{
+    -fx-background-colour:transparent;
+    
+}
+.close:hover{
+    -fx-background-colour:#000000;
+}
