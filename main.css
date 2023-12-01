@@ -1,0 +1,93 @@
+.side_anchor{
+    
+    -fx-background-color: #575656; 
+}
+.main_anchor{
+    -fx-background-color: linear-gradient(to right,#8f8f8f , #8f8f8f );
+}
+.close{
+    -fx-background-color: transparent;
+    -fx-cursor:hand; 
+}
+.close:hover{
+    -fx-background-color: #ee6b06;
+}
+.choose_btn{
+    -fx-background-color: #b3aeae;
+    -fx-text-fill: rgb(42, 40, 40);
+    -fx-cursor:hand;
+}
+
+.choose_btn:hover{
+    -fx-background-color: #ee6b06;
+    -fx-text-fill:  #000000;
+}
+
+.logout{
+    -fx-background-color:#323232;
+    -fx-text-fil: #ffffff;
+}
+.logout:hover{
+    -fx-background-color:#ee6b06;
+    -fx-text-fill: #ffff;
+}
+
+.bg{
+    -fx-background-color: #535353;
+    -fx-background-radius: 8px;
+}
+
+.transparent{
+    -fx-background-color: #535353;
+}
+
+.transparent:hover{
+    -fx-background-color:#ee6b06; 
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+.verified{
+    -fx-text-fill:white;
+}
+.verified:hover{
+    -fx-background-color: #ee6b06;
+    -fx-text-fill:#000000;
+}
+
+
+.cards{
+    -fx-background-color: #ee6b06;
+    -fx-text-fill:#535353;
+}
+
+.more_btn{
+    -fx-background-color: #ee6b06;
+    -fx-text-fill:#e9e9e9;
+}
+.more_btn:hover{
+    -fx-background-color: #ee6b06;
+    -fx-text-fil: #000000;
+}
+.buttonWithImage {          
+    -fx-graphic: url("hatchback_car.jpeg");
+}
+.buttonssWithImage {          
+    -fx-graphic: url("Screenshot 2023-07-05 140722.png");
+}
+.searchBtn{
+    -fx-background-color: #ee6b06;
+    -fx-text-fill: #000000;
+}
+.search_field{
+    -fx-background-color:#3b3b3b;
+    -fx-text-fill: #ee6b06;
+}
+.image-container {
+    display: inline-block; /* Ensures the container only takes the size of the image */
+    position: relative; /* Necessary for absolute positioning of overlay */
+  }
+ 
+  .image-container:hover {
+    background-color: #ee6b06; /* Change the background color on hover */
+  }
+  

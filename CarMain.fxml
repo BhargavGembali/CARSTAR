@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xm l version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <AnchorPane fx:id="frame" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="logo_img" layoutX="32.0" prefHeight="62.0" prefWidth="359.0" style="-fx-text-fill: #3cfff2;" text="CARSTAR★">
+               <font>
+                  <Font name="Rockwell" size="65.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Sign_frame" layoutX="603.0" layoutY="89.0" prefHeight="520.0" prefWidth="316.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="522.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" width="391.0">
+                     <fill>
+                        <LinearGradient cycleMethod="REFLECT" endX="0.31553398058252424" endY="1.0" startX="0.3252427184466019" startY="0.019417475728155338">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color blue="0.9490196108818054" green="1.0" red="0.23529411852359772" />
+                                 </color></Stop>
+                              <Stop offset="0.14855072463768115">
+                                 <color>
+                                    <Color blue="0.9490196108818054" green="1.0" red="0.23529411852359772" />
+                                 </color></Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label fx:id="sign_label" layoutX="153.0" layoutY="14.0" prefHeight="54.0" prefWidth="130.0" text="LOGIN!">
+                     <font>
+                        <Font name="Rockwell Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="user_field" layoutX="121.0" layoutY="182.0" onAction="#LoginAdmin" promptText="            username" style="-fx-background-color: white;" />
+                  <PasswordField fx:id="password_field" layoutX="122.0" layoutY="261.0" onAction="#LoginAdmin" promptText="            password" style="-fx-background-color: white;" />
+                  <Button fx:id="LoginBtn" layoutX="124.0" layoutY="369.0" mnemonicParsing="false" onAction="#LoginAdmin" prefHeight="35.0" prefWidth="188.0" text="Login" />
+                  <Label fx:id="sumbit" layoutX="45.0" layoutY="418.0" prefHeight="76.0" prefWidth="346.0" style="-fx-text-fill: white;" />
+                  <Button fx:id="eye" layoutX="312.0" layoutY="259.0" minWidth="33.0" mnemonicParsing="false" onAction="#show" prefHeight="31.0" prefWidth="39.0" styleClass="close" stylesheets="@loginDesign.css" text="👁" />
+                  <Label fx:id="label_pass" layoutX="121.0" layoutY="293.0" prefHeight="18.0" prefWidth="152.0" />
+                  <Label fx:id="password_label" layoutX="153.0" layoutY="311.0" prefHeight="18.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-font-size: 20; -fx-font-family: Rockwell;" />
+                  <Button fx:id="register_here_btn" layoutX="14.0" layoutY="469.0" mnemonicParsing="false" onAction="#SwitchLoggedForm" styleClass="transparent" stylesheets="@loginDesign.css" text="New here?  &#10;sign up!" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="close" layoutX="732.0" layoutY="24.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="81.0" style="-fx-text-fill: white;" styleClass="close" stylesheets="@loginDesign.css" text="x" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="24.0" />
+            <AnchorPane fx:id="Sign_up_frame" layoutX="60.0" layoutY="89.0" prefHeight="520.0" prefWidth="316.0">
+               <children>
+                  <Rectangle fx:id="sign_up_field" arcHeight="5.0" arcWidth="5.0" height="522.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" width="391.0">
+                     <fill>
+                        <LinearGradient cycleMethod="REFLECT" endX="0.31553398058252424" endY="1.0" startX="0.3252427184466019" startY="0.019417475728155338">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color blue="0.9490196108818054" green="1.0" red="0.23529411852359772" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.14855072463768115">
+                                 <color>
+                                    <Color blue="0.9490196108818054" green="1.0" red="0.23529411852359772" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Rectangle>
+                  <Label fx:id="sign_up_label" layoutX="153.0" layoutY="14.0" prefHeight="54.0" prefWidth="130.0" text="SIGN UP!">
+                     <font>
+                        <Font name="Rockwell Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sign_up_user_field" layoutX="121.0" layoutY="182.0" onAction="#LoginAdmin" promptText="            username" style="-fx-background-color: white;" />
+                  <PasswordField fx:id="sign_password_field" layoutX="122.0" layoutY="261.0" onAction="#LoginAdmin" promptText="            password" style="-fx-background-color: white;" />
+                  <Button fx:id="sign_up_btn" layoutX="124.0" layoutY="369.0" mnemonicParsing="false" onAction="#register" prefHeight="35.0" prefWidth="188.0" text="Sign up" />
+                  <Label fx:id="sumbit1" layoutX="45.0" layoutY="418.0" prefHeight="76.0" prefWidth="346.0" style="-fx-text-fill: white;" />
+                  <Button fx:id="sign_up_eye" layoutX="312.0" layoutY="258.0" minWidth="33.0" mnemonicParsing="false" onAction="#show_sign_up" prefHeight="32.0" prefWidth="33.0" text="👁" />
+                  <Label fx:id="label_pass1" layoutX="121.0" layoutY="293.0" prefHeight="18.0" prefWidth="152.0" />
+                  <Label fx:id="sign_up_password_label" layoutX="153.0" layoutY="311.0" prefHeight="18.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-font-size: 20; -fx-font-family: Rockwell;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="side_frame" layoutX="22.0" layoutY="89.0" prefHeight="522.0" prefWidth="556.0">
+               <children>
+                  <ImageView fitHeight="542.0" fitWidth="522.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@a-non-branded-car-with-a-plain-light-blue-background.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="already_have_btn" layoutX="24.0" layoutY="461.0" mnemonicParsing="false" onAction="#SwitchLoggedForm" styleClass="transparent" stylesheets="@loginDesign.css" text="Already have &#10;account?" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
